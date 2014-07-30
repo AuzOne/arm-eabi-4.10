@@ -173,6 +173,12 @@
 #endif
 
 
+/* Define to get calls to the valgrind runtime enabled. */
+#ifndef USED_FOR_TARGET
+/* #undef ENABLE_VALGRIND_ANNOTATIONS */
+#endif
+
+
 /* Define if you want to run subprograms and generated programs through
    valgrind (a memory checker). This is extremely expensive. */
 #ifndef USED_FOR_TARGET
@@ -1721,12 +1727,6 @@
 /* Define if host mkdir takes a single argument. */
 #ifndef USED_FOR_TARGET
 /* #undef MKDIR_TAKES_ONE_ARG */
-#endif
-
-
-/* Define to 1 if HOST_WIDE_INT must be 64 bits wide (see hwint.h). */
-#ifndef USED_FOR_TARGET
-#define NEED_64BIT_HOST_WIDE_INT 1
 #endif
 
 
